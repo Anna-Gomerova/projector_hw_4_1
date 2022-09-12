@@ -1,0 +1,30 @@
+body {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    margin: 0px;
+}
+
+h1 {
+    text-decoration: none;
+    font-weight: 400;
+    font-family: 'Quattrocento';
+    font-size: 96px;
+    text-align: center;
+    line-height: 100px;
+    margin: 75px 0px;
+}
+
+h2 {
+    list-style-type: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    opacity: 0.55;
+    margin: 0px;
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0px auto;
+}
