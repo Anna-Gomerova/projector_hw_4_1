@@ -92,7 +92,7 @@ nav a {
 }
 
 
-philosophy_text_part {
+.philosophy_text_part {
     display: flex;
     flex-direction: column;
 }
@@ -146,6 +146,13 @@ philosophy_text_part {
     max-width: 1440px;
     width: 100%;
     margin: 0px auto;
+    padding: 0px 60px;
+}
+
+.philosophy {
+    display: flex;
+    flex-direction: row;
+    gap: 26px 40px;
 }
 
 /* .intro h2 {
@@ -228,6 +235,25 @@ philosophy_text_part {
     flex-direction: column;
 } */
 
+/* img { max-width: 100%;} */
+.text_block {
+    clear: both;
+}
+
+.groupe_img {
+    padding-right: 139px;
+    position: relative;
+}
+
+.small_img {
+    position: absolute;
+    left: 56.88%;
+    top: 32.8%;
+}
+
+.mobile {
+    display: none;
+}
 
 #header {
     float: left;
@@ -235,25 +261,24 @@ philosophy_text_part {
     padding-top: 4px;
 }
 
-.text_block {
-    clear: both;
-}
 
 @media screen and (max-width: 800px) {
 
+
     .container {
         width: 100%;
+        padding: 0;
     }
 
-
+    .philosophy {
+        display: flex;
+        flex-direction: column;
+    }
 
     .philosophy_text_part {
         padding: 25px 3.12%;
         display: flex;
         flex-direction: column;
-
-
-
     }
 
     .float {
@@ -287,10 +312,39 @@ philosophy_text_part {
         margin-bottom: 0;
     }
 
-.button {
-    align-self: flex-end;
-}
+    .button {
+        align-self: flex-end;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    /* .big_img {
+    background-image: url(./img/wood_large_mobile1x.jpg);
+    
+} */
+
+    /* .small_img {
+    background-image: url(./img/wood_small_mobile1x.jpg);
+} */
+    .groupe_img {
+        align-self: center;
+        padding: 0;
+    }
+
+    .small_img {
+        top: 278px;
+        left: 132px;
+
+    }
 
     #header {
         display: none;
     }
+
+}
