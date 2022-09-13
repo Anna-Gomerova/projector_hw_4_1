@@ -23,8 +23,162 @@ h2 {
     margin: 0px;
 }
 
+/* nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 40px 48px;
+    text-align: center;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0px 24px;
+}
+
+
+nav li:first-child {
+    float: left;
+    margin: 0px;
+}
+
+nav li:last-child {
+    float: right;
+    margin: 0px;
+}
+
+nav li::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: transparent;
+    background-position: center;
+}
+
+nav li:hover::after {
+    background-image: url(./HW2.2_img/_.svg);
+    background-repeat: no-repeat;
+}
+
+nav a {
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.06em;
+    opacity: 0.8;
+    padding: 0 12px 11px;
+} */
+
+.font_green {
+    color: #71870E;
+}
+
+.font_bold {
+    font-weight: bold;
+}
+
+.main_thought {
+    font-family: 'Quattrocento';
+font-style: normal;
+font-weight: 300;
+font-size: 60px;
+line-height: 107%;
+color: #000000;
+
+}
+
+/* .background_main {
+    position: relative;
+}
+
+.background_main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./HW2.2_img/bg.jpg);
+    background-repeat: no-repeat;
+    z-index: -1;
+    background-size: cover;
+
+} */
+
 .container {
     max-width: 1440px;
     width: 100%;
     margin: 0px auto;
+}
+
+/* .intro h2 {
+    opacity: 0.9;
+    padding-left: 51.7%;
+    
+} */
+
+/* padding-left: 51.7% - це розрахунок padding-left: 605px/1170px*/
+
+/* .intro img {
+    position: relative;
+    display: block;
+    margin: 75px auto;
+    z-index: 2;
+}
+
+.menu a,
+.intro {
+    color: white;
+}
+
+.intro {
+    position: relative;
+} */
+
+
+
+/* #intro_text {
+    width: 81.25%;
+    margin: 0 auto;
+}
+
+#pre_header {
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 0.9;
+    top: 181px;
+    padding-top: 62px;
+}
+
+#intro_decoration {
+    overflow: hidden;
+    font-family: 'Quattrocento';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+    color: #71870E;
+    margin: -276px 0px 0px 0px;
+    padding-bottom: 75px;
+    white-space: nowrap;
+}
+
+#about {
+    margin-top: 205px;
+} */
+
+
+@media screen and (max-width: 800px) {
+   
+    .container {
+        width: 100%;
+    }
+   
+    #header {
+        display: none;
+    }
 }
