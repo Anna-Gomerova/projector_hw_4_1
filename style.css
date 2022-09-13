@@ -283,6 +283,13 @@ philosophy_text_part {
         margin-bottom: 36px;
     }
 
+    .text_block p:last-child {
+        margin-bottom: 0;
+    }
+
+.button {
+    align-self: flex-end;
+}
 
     #header {
         display: none;
