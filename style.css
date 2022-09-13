@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Montserrat';
     font-size: 20px;
@@ -21,6 +27,10 @@ h2 {
     line-height: 21px;
     opacity: 0.55;
     margin: 0px;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* nav ul {
@@ -76,18 +86,42 @@ nav a {
     color: #71870E;
 }
 
-.font_bold {
+.font_important {
     font-weight: bold;
+    font-style: italic;
+}
+
+
+philosophy_text_part {
+    display: flex;
+    flex-direction: column;
 }
 
 .main_thought {
     font-family: 'Quattrocento';
-font-style: normal;
-font-weight: 300;
-font-size: 60px;
-line-height: 107%;
-color: #000000;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 107%;
+    color: #000000;
 
+}
+
+.button {
+    width: 225px;
+    height: 75px;
+    padding-top: 50px;
+
+
+}
+
+.button a {
+    color: #D0A049;
+    display: flex;
+}
+
+.button_line {
+    margin-right: 30px;
 }
 
 /* .background_main {
@@ -172,13 +206,84 @@ color: #000000;
 } */
 
 
+/* .grid {
+    display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-areas: "philo thought";
+  grid-template-rows: auto;
+  grid-template-columns: 105px 1fr;
+}
+
+.grid > h2 {
+    grid-area: philo;
+}
+
+.grid > p {
+    grid-area: thought;
+}
+
+.philosophy_text_part {
+    display: flex;
+    flex-direction: column;
+} */
+
+
+#header {
+    float: left;
+    margin-right: 12px;
+    padding-top: 4px;
+}
+
+.text_block {
+    clear: both;
+}
+
 @media screen and (max-width: 800px) {
-   
+
     .container {
         width: 100%;
     }
-   
+
+
+
+    .philosophy_text_part {
+        padding: 25px 3.12%;
+        display: flex;
+        flex-direction: column;
+
+
+
+    }
+
+    .float {
+        text-align: center;
+    }
+
+    .main_thought {
+        font-size: 40px;
+    }
+
+    .font_important {
+        font-weight: normal;
+    }
+
+    .text_block {
+        margin-top: 25px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 175%;
+        color: #000000;
+        opacity: 0.85;
+    }
+
+    .text_block p {
+
+        margin-bottom: 36px;
+    }
+
+
     #header {
         display: none;
     }
-}
