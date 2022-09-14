@@ -33,54 +33,6 @@ a {
     text-decoration: none;
 }
 
-/* nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 40px 48px;
-    text-align: center;
-}
-
-nav li {
-    list-style-type: none;
-    display: inline-block;
-    margin: 0px 24px;
-}
-
-
-nav li:first-child {
-    float: left;
-    margin: 0px;
-}
-
-nav li:last-child {
-    float: right;
-    margin: 0px;
-}
-
-nav li::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 3px;
-    background: transparent;
-    background-position: center;
-}
-
-nav li:hover::after {
-    background-image: url(./HW2.2_img/_.svg);
-    background-repeat: no-repeat;
-}
-
-nav a {
-    text-decoration: none;
-    display: inline-block;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.06em;
-    opacity: 0.8;
-    padding: 0 12px 11px;
-} */
 
 figcaption {
     padding-top: 75px;
@@ -91,10 +43,21 @@ figcaption {
     opacity: 0.8;
 }
 
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px 60px;
+}
+
 .philosophy {
+    display: flex;
+    flex-direction: row;
+    gap: 0px 40px;
     margin-top: 100px;
     margin-bottom: 100px;
 }
+
 
 .font_green {
     color: #71870E;
@@ -103,12 +66,6 @@ figcaption {
 .font_important {
     font-weight: bold;
     font-style: italic;
-}
-
-
-.philosophy_text_part {
-    display: flex;
-    flex-direction: column;
 }
 
 .main_thought {
@@ -121,117 +78,6 @@ figcaption {
 
 }
 
-.button {
-    width: 225px;
-    height: 75px;
-    padding-top: 50px;
-    margin-top: 25px;
-    margin-left: 15.15%;
-    font-size: 16px;
-
-
-}
-
-.button a {
-    color: #D0A049;
-    display: flex;
-}
-
-.button_line {
-    margin-right: 30px;
-}
-
-/* .background_main {
-    position: relative;
-}
-
-.background_main::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(./HW2.2_img/bg.jpg);
-    background-repeat: no-repeat;
-    z-index: -1;
-    background-size: cover;
-
-} */
-
-.container {
-    max-width: 1440px;
-    width: 100%;
-    margin: 0px auto;
-    padding: 0px 60px;
-}
-
-.philosophy {
-    display: flex;
-    flex-direction: row;
-    gap: 26px 40px;
-}
-
-/* .intro h2 {
-    opacity: 0.9;
-    padding-left: 51.7%;
-    
-} */
-
-/* padding-left: 51.7% - це розрахунок padding-left: 605px/1170px*/
-
-/* .intro img {
-    position: relative;
-    display: block;
-    margin: 75px auto;
-    z-index: 2;
-}
-
-.menu a,
-.intro {
-    color: white;
-}
-
-.intro {
-    position: relative;
-} */
-
-
-
-/* #intro_text {
-    width: 81.25%;
-    margin: 0 auto;
-}
-
-#pre_header {
-    margin: 0;
-    font-size: 16px;
-    line-height: 24px;
-    opacity: 0.9;
-    top: 181px;
-    padding-top: 62px;
-}
-
-#intro_decoration {
-    overflow: hidden;
-    font-family: 'Quattrocento';
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    width: 100%;
-    color: #71870E;
-    margin: -276px 0px 0px 0px;
-    padding-bottom: 75px;
-    white-space: nowrap;
-}
-
-#about {
-    margin-top: 205px;
-} */
-
-
-
-
 .philosophy_text_part {
     display: flex;
     flex-direction: column;
@@ -242,7 +88,6 @@ figcaption {
     padding-right: 10.5%;
     padding-left: 10.5%;
 }
-
 
 .text_block {
     clear: both;
@@ -264,6 +109,24 @@ figcaption {
 
 .text_block p:first-child {
     margin-top: 0;
+}
+
+.button {
+    width: 225px;
+    height: 75px;
+    padding-top: 50px;
+    margin-top: 25px;
+    margin-left: 15.15%;
+    font-size: 16px;
+}
+
+.button a {
+    color: #D0A049;
+    display: flex;
+}
+
+.button_line {
+    margin-right: 30px;
 }
 
 .groupe_img {
@@ -288,6 +151,11 @@ figcaption {
     padding-top: 4px;
 }
 
+
+@media screen and (max-width: 1350px) {
+    .philosophy
+    {align-items: center;}
+}
 
 @media screen and (max-width: 800px) {
 
@@ -344,14 +212,7 @@ figcaption {
         display: block;
     }
 
-    /* .big_img {
-    background-image: url(./img/wood_large_mobile1x.jpg);
-    
-} */
 
-    /* .small_img {
-    background-image: url(./img/wood_small_mobile1x.jpg);
-} */
     .groupe_img {
         align-self: center;
         padding: 0;
