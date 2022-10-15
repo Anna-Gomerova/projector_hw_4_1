@@ -33,6 +33,10 @@ a {
     text-decoration: none;
 }
 
+img {
+    /* width: 100%; */
+}
+
 
 figcaption {
     padding-top: 75px;
@@ -157,7 +161,7 @@ figcaption {
     {align-items: center;}
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1150px) {
 
 
     .container {
